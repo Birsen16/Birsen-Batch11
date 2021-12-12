@@ -1,6 +1,6 @@
 package primatives;
 
-public class Char {
+public class CharPractise {
     public static void main(String[] args) {
         char ch1 ='A';
         System.out.println("A");// This is string. I can use it again and again
@@ -30,9 +30,10 @@ public class Char {
         System.out.println(yourLetter);
         System.out.println(ourLetter);
 
-
-
         // char can take whole number and int can take single character because of the ASCII
+        //If you are assigning int for char, it supposes to be in a single quotation marks such as not  int number = Y
+
+
 
 
     }

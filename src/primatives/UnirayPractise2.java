@@ -11,11 +11,31 @@ public class UnirayPractise2 {
         System.out.println(a);
         System.out.println(b);
 
-        int donutCost=2;
-        int donutCount =12;
-        int totalCost = donutCost * donutCount;
-        System.out.println(totalCost); //DD
-        System.out.println(--totalCost); //CC
+//        //TASK DONUT
+//        each donut is 2$
+//        12 donuts, next time you get $1 off(post- decreament)
+//        or
+//        buy 12 donuts you get $1 off now.(pre-decreament)
+
+
+        //// Ask Dunkin Donut example just for the DD part. KK part is clear
+        int eachDonut=2;
+        int donutNumber =12;
+        int total= donutNumber * eachDonut;
+
+
+        System.out.println(total); //DD
+        System.out.println(--total); //KK
+
+        char ch ='a';
+        System.out.println(--ch);
+        System.out.println(ch);
+        System.out.println(++ch);
+        ch++;
+        ++ch;
+       System.out.println(ch);
+       System.out.println(--ch);
+
 
 
 

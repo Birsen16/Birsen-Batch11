@@ -37,6 +37,9 @@ public class ArithmaticOperations {
         float division4 = 5/2f;
         System.out.println(division4); // 2.5
 
+        float division5= num2/num1;//1.0
+        System.out.println(division5);
+
         //Remainder %(Modulus) Left over
 
         int a = 11;

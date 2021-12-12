@@ -28,12 +28,12 @@ public class CompoundAssigments {
 //        System.out.println(CurrencyExchange);
 
         //Inches to meter Task
-//
-//        double GivenInchesValue = 2000;
+////
+//        double GivenInchesValue = 1000;
 //
 //        double meter = GivenInchesValue * 0.0254;
 //
-//        System.out.println(meter);
+//        System.out.println(GivenInchesValue + " inches is " + meter + " meters.");
 
         // days and years Task
 //        int minutes = 3456789;
@@ -89,13 +89,12 @@ public class CompoundAssigments {
         int remainder = ch1 % 2;
         System.out.println(remainder);
 
-        ch1 %=2;
-        System.out.println(ch1);
+//        ch1 %=2;
+//        System.out.println(ch1);
 
-
-
-
-
+        char random = '6';
+        random %= 2;
+        System.out.println(random);
 
 
 
