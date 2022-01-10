@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class WhileTask1 {
     public static void main(String[] args) {
-        //ask user to provede a whole integer number
+        //ask user to proved a whole integer number
         // create a multiplication table from 1 to 10 from the given number
         //input 4 --> 4
         Scanner input = new Scanner(System.in);

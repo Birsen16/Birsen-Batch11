@@ -5,6 +5,23 @@ import java.util.Scanner;
 
 public class Homework2 {
     public static void main(String[] args) {
+
+        //String [] array ={"anne" ,"baba","abla","abi","kardes","kendin","kizin", "oglun","kocan"};
+        int array[] = {1, 2, 3, 4, 5, 6};
+
+        for (int i = 0; i < array.length; i = i + 2) {
+
+            int temp = array[i];
+            array[i] = array[i + 1];
+            array[i + 1] = temp;
+        }
+
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+}
+
                 /*
         Using scanner ask user to enter grade letter and print the number value matching with this grade.
 Example:
@@ -199,6 +216,6 @@ For this task you should use if else statement.
 This is the hardest task in this week's homework and
 I will send solution for this task on Monday.
 */
-        }
 
-        }
+
+

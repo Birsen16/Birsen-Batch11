@@ -6,18 +6,20 @@ public class MontsOfYears {
         peinr out months for the years between 2020 to 2023
         print out the manes of each month
          */
-        for (int y =2020; y<=2023;y++){
-
-
+//       for (int days = 1;d <= 31;m++){
+//         System.out.println(d + " ");
+//                        }
+        for (int y =2021; y<=2023;y++){
             System.out.println(y+ "-->");
+
             for (int m = 1; m<=12;m++){
                 System.out.print(m+ "- ");
+
+
                 switch (m){
                     case 1:
                         System.out.println("January");
-                        for (int days = 1;m <= 31;m++){
-                            System.out.println(m + " ");
-                        }
+
                         break;
                     case 2:
                         System.out.println("February");

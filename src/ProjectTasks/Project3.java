@@ -1,23 +1,90 @@
 package ProjectTasks;
-
+import java.util.Locale;
 import java.util.Scanner;
-
 public class Project3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please choose one of the following three music types: " + "\nClassical" +  "\nPop"  + "\nCountry");
-        String music = scanner.nextLine().toLowerCase();
-        String classical = "Classical";
-        String pop = "pop";
-        String country = "country";
+        System.out.println("Which music category would you prefer to listen? Please choose from following list:" + "\nClassical" + "\nPop" + "\nCountry");
+        String music = scanner.nextLine();
+        while (!(music.equals("classical") || music.equals("pop") || music.equals("country"))) {
+            System.out.println("TYPE OF MUSIC is not available");
+            System.out.println("Available music types are Classical, Pop, and Country\nPlease enter the music type from the list:");
+            music = scanner.nextLine().toLowerCase(Locale.ROOT);
+        }
+
+        if (music.equalsIgnoreCase("Classical")) {
+            System.out.println("Please choose a song from following list: " + "\nRondo alla Turca" + "\nO Fortuna" + "\nFigaro" +
+                    "\nCarmen- Habanera" + "\nEine Kleine Nachtmusik");
+            String songClassical = scanner.nextLine();
+
+            if ((songClassical.equalsIgnoreCase("Rondo alla Turca")) || (songClassical.equalsIgnoreCase("O Fortuna")) ||
+                    (songClassical.equalsIgnoreCase("Figaro")) || (songClassical.equalsIgnoreCase("Carmen- Habanera")) ||
+                    (songClassical.equalsIgnoreCase("Eine Kleine Nachtmusik"))) {
+
+                System.out.println("Please enter the 2$ for " + songClassical);
+                double fee = scanner.nextDouble();
+                if (fee < 2.00) {
+                    System.out.println(fee + " $ is not sufficient amount ,please try again");
+
+                } else if (fee == 2.00) {
+                    System.out.println(songClassical + " is playing. Enjoy " + songClassical);
+
+                } else if (fee > 2.00) {
+                    System.out.println("You entered " + (fee - 2.00) + " $ more. Please wait for change. " + songClassical + " is playing. Enjoy " + songClassical);
+                }
 
 
-        if (music.contains("classical")){
-            System.out.println("Please choose one of the following songs for this category : " + "\nO Fortuna" +  "\nMoonlight Sonato"  + "\nWedding March"+  "\nFigaro"  + "\nThe Fout Season :Spring");
+            } else {
+                System.out.println(songClassical + " is currently not available. Please accept our apologies. ");
+            }
+           } else if (music.equalsIgnoreCase("Pop")) {
+            System.out.println("Which song would you want to listen? Please choose from following list:" + "\nFather and son" + "\nSmooth criminal" + "\nBohemian Rhapsody" +
+                    "\nBye Bye Love" + "\nRespect");
+            String songPop = scanner.nextLine();
+            if ((songPop.equalsIgnoreCase("Father and son")) || (songPop.equalsIgnoreCase("Smooth criminal")) ||
+                    (songPop.equalsIgnoreCase("Bohemian Rhapsody")) || (songPop.equalsIgnoreCase("Bye Bye Love")) ||
+                    (songPop.equalsIgnoreCase("Respect"))) {
 
-        }else if (music.contains("pop")){
+                System.out.println("Please enter the 4$ for " + songPop);
+                double fee = scanner.nextDouble();
+                if (fee < 4.00) {
+                    System.out.println(fee + " $ is not sufficient amount ,please try again");
+                } else if (fee == 4.00) {
+                    System.out.println(songPop + " is playing. Enjoy " + songPop);
+                } else if (fee > 4.00) {
+                    System.out.println("You entered " + (fee - 4.00) + " $ more. Please wait for change. " + songPop + " is playing. Enjoy " + songPop);
+                }
+            } else {
+                System.out.println(songPop + " is currently not available. Please accept our apologies. ");
+            }
+            } else if (music.equalsIgnoreCase("country")) {
+            System.out.println("Which song would you want to listen? Please choose from following list: " + "\nJolene" + "\nNasty Dan" + "\nTexas" +
+                    "\nthe devil went down to Georgia" + "\nRing of Fire");
+            String songCountry = scanner.nextLine();
+            if ((songCountry.equalsIgnoreCase("Jolene")) || (songCountry.equalsIgnoreCase("Nasty Dan")) ||
+                    (songCountry.equalsIgnoreCase("Texas")) || (songCountry.equalsIgnoreCase("the devil went down to Georgia")) ||
+                    (songCountry.equalsIgnoreCase("Ring of Fire"))) {
 
-        }//
+                System.out.println("Please enter the 3$ for " + songCountry);
+                double fee = scanner.nextDouble();
+                if (fee < 3.00) {
+                    System.out.println(fee + " $ is not sufficient amount ,please try again");
+
+                } else if (fee == 3.00) {
+                    System.out.println(songCountry + " is playing. Enjoy " + songCountry);
+
+                } else if (fee > 3.00) {
+                    System.out.println("You entered " + (fee - 2.00) + " $ more. Please wait for change. " + songCountry + " is playing. Enjoy " + songCountry);
+                }
+            } else {
+                System.out.println(songCountry + " is currently not available. Please accept our apologies. ");
+            }
+           }else {
+            System.out.println(music + " music category is not available.");
+
+
+        }
+
     }
 }
  /*

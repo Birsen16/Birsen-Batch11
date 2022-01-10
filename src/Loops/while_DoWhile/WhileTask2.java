@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class WhileTask2 {
     /*
-    get a string from user and priit out every letter from giben string seperated bu comma
+    get a string from user and print out every letter from given string separated by comma
     input--> winter
     out --> w, i, n, t, e, r,
      */

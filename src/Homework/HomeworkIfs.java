@@ -1,10 +1,11 @@
 package Homework;
 
 import java.util.Scanner;
+import java.util.concurrent.LinkedBlockingDeque;
 
 public class HomeworkIfs {
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
        /*
        Using the scanner ask the user to enter any String value. If this
       String has a color like red or blue with lower case print the red or
@@ -128,16 +129,19 @@ public class HomeworkIfs {
         Output :dad
         Input the year: testDudtest
         Output :dad
-//         */
-//        System.out.println("Enter a string value");
-//        String str = scanner.nextLine().toLowerCase();
-//        String middle = str.substring((str.length() /2)-1 , (str.length() /2)+2);
-//       // String  first= str.substring(0,str.indexOf(middle));
-//        //String last = str.substring(str.indexOf(middle)+3);
-//       // System.out.println(first);
-//       // System.out.println(middle);
-//        //System.out.println(last);
 
+
+        /*
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter a string value");
+        String str = scanner.nextLine().toLowerCase();
+
+        for (int index =0; index < str.length();index++){
+            if (str.charAt(index)=='d' && str.charAt(index+2)=='d'){
+                System.out.println("dad");
+            }
+        }
+        */
         /*
         Using Scanner ask user to provide any int number
          and print multiplication table of given number
@@ -167,14 +171,116 @@ public class HomeworkIfs {
 //                     i++;
 //                 }
 
-        System.out.println("Enter a starting number");
+                    /*
+                    Using a scanner ask the user to provide starting and ending numbers.
+                    Print the numbers divisible by 3 and 5 between given number AND ONLY print count
+                    of those numbers which is divisible by 3 and 5.
+                    EXAMPLE:
+                    First number: 5
+                    Second number: 65
+                    Output: 4
+                        //-> Because between 65 and 5 there is only 4 number divisible by 3 and 5 which
+                        //-> are 15 30 45 and 60 but in this task please do not print anything else just the
+                       // count of number which are divisible by 3 and 5.
+                     */
 
-        System.out.println("Enter an ending number");
+//        System.out.println("Enter a starting number");
+//        int num1 = scanner.nextInt();
+//        System.out.println("Enter an ending number");
+//        int num2 = scanner.nextInt();
+//        int count =0;
+//        int sum=0;
+//        //if (num1 % 3==0 && num1 % 5 ==0  && num2 % 5 == 0 && num2 % 3 ==0){
+//        for (int i = num1; i <= num2;i++){
+//
+//            if ((i %3 ==0) && (i %5==0)){
+//               count++;
+//               sum +=i;
+//            }
+//       }
+//        System.out.println(count);
+
+        /*
+        Using the scanner ask the user to provide String value.
+        Then replace all the char of the String with 'a' using loop and PRINT IN EVERY STEP.
+        Look at example below carefully
+						For example:
+        Input: Success
+        Output:
+        "auccess"
+        "aaccess"
+        “aaacess”
+        "aaaaess"
+        "aaaaass"
+        "aaaaaas"
+        "aaaaaaa"
+        “aaaaaaa”
+         */
+
+
+//
+//                System.out.println("Enter a string value");
+//                String str = scanner.nextLine();
+//                int index = 1;
+//                String a = "a";
+//                while (index <= str.length()) {
+//                    str = str.substring(index);
+//                    str = a+str;
+//                    index++;
+//                    a +="a";
+//                   System.out.println(str);
+//                }
+//            }
+//        }
+
+        /*
+        The user using a scanner enters the current speed and target speed .
+        In every 1-sec car's speed will increase 10mil. Please find the total number of sec
+        to reach your target speed using a while loop.
+        Example:
+        CurrentSpeed: 6
+        Target Speed: 20
+        Output: 2. -> Because in two seconds user can reach the target speed.
+         */
+//
+//        System.out.println("Enter current speed");
+//        int current = scanner.nextInt();
+//
+//        System.out.println("Enter target speed");
+//        int target = scanner.nextInt();
+//
+//        int second =0;
+//        while (current< target){
+//        current+=10;
+//            second++;
+//        }
+//
+//        System.out.println(second);
 
 
 
-            }
-        }
+
+
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

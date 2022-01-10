@@ -25,9 +25,12 @@ public class Practice3 {
         for (int i =0 ; i< str.length(); i++){
             if (str.charAt(i) =='n'){
                 count++;
+
             }
         }
         System.out.println("There are " + count + "letter n in the string");
+        String str1= "abcdefghijklmn";
+
 
     }
 }
