@@ -24,7 +24,7 @@ public class HookOpenMrs {
     @After
     public void afterScenario(Scenario scenario){
         Date currentData=new Date();
-        String screenshotfileName=currentData.toString().replace("","-")
+        String screenshotfileName = currentData.toString().replace("","-")
                 .replace(":","-");
         if (scenario.isFailed()){
             File screenshotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);

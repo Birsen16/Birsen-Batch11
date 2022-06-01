@@ -51,10 +51,11 @@ public class RegisterPatientSteps {
         openMrsRegisterPage.clickConfirmButton();
 
     }
+
     @Then("the user validate the patient name and familyName")
     public void the_user_validate_the_patient_name_and_family_name(DataTable dataTable) {
-       Map<String,String> validateNames= dataTable.asMap();
-        Assert.assertEquals(validateNames.get("GivenName"),openMrsRegisterPage.getGivingName());
-        Assert.assertEquals(validateNames.get("FamilyName"),openMrsRegisterPage.getFamilyName());
+        Map<String, String> validateNames = dataTable.asMap();
+        Assert.assertEquals(validateNames.get("GivenName"), openMrsRegisterPage.getGivingName());
+        Assert.assertEquals(validateNames.get("FamilyName"), openMrsRegisterPage.getFamilyName());
     }
 }
